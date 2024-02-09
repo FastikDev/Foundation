@@ -1,0 +1,95 @@
+.feedback {
+  padding: 50px $unit;
+  padding-top: 39px;
+  border-bottom: 1px solid $color-light-grey;
+
+  @include for-large-up {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 66px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $popular-font-size + 2;
+    line-height: $popular-line-height - 4;
+    color: $text-color-blue;
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 29px;
+    font-size: 24px;
+    line-height: 34px;
+
+    @include for-large-up {
+      max-width: 750px;
+    }
+  }
+
+  &__coment {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include for-large-up {
+      margin-top: 34px;
+      text-align: center;
+    }
+
+    &-autor {
+      font-weight: 700;
+    }
+
+    &-text {
+      color: $text-color-light-gray;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin-top: 40px;
+
+    @include for-large-up {
+      position: absolute;
+      bottom: 0;
+      right: 26px;
+      margin: 0;
+      max-width: 273px;
+    }
+  }
+}
+
+.dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  @include for-large-up {
+    margin-top: 40px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: $color-dots;
+    border-radius: 50%;
+    margin-left: 20px;
+
+    @include for-large-up {
+      width: 8px;
+      height: 8px;
+      margin-left: 13px;
+    }
+
+    &-selected {
+      background-color: $color-dots-selected;
+      margin: 0;
+    }
+  }
+}

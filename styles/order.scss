@@ -1,0 +1,83 @@
+.order {
+  padding: 50px $unit;
+  background-color: $color-light;
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  &__text {
+    font-size: $popular-font-size;
+    line-height: $popular-line-height - 2;
+    margin: 0;
+    margin-top: 18px;
+  }
+
+  &__email {
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: $color-white;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    height: 48px;
+    width: 100%;
+
+    &::placeholder {
+      color: $text-color-dark;
+    }
+
+    @include for-large-up {
+      text-align: left;
+      padding-left: 15px;
+      margin-top: 0;
+    }
+  }
+
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-gray;
+  }
+
+  &__terms-link {
+    color: $text-color-blue;
+  }
+
+  @include for-large-up {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 72px 0 73px 0;
+
+    &__ilustration {
+      max-width: 200px;
+      margin: 0 auto;
+      display: block;
+      max-width: 269px;
+      margin: 0;
+      margin-right: 121px;
+    }
+
+    &__details {
+      max-width: 555px;
+    }
+
+    &__form {
+      display: flex;
+      margin-top: 26px;
+    }
+
+    &__button {
+      margin-top: 0;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+  }
+}
