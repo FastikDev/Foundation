@@ -2,6 +2,10 @@
   padding: 50px $unit;
   background-color: $color-light-blue;
 
+  @include for-large-up {
+    padding: 0;
+  }
+
   &__details {
     @include for-large-up {
       max-width: 555px;
@@ -41,9 +45,12 @@
     line-height: $popular-line-height;
     margin: 0;
     margin-top: 18px;
+    text-align: center;
 
     @include for-large-up {
+      margin: 0 auto;
       margin-top: 30px;
+      width: 555px;
     }
   }
 
@@ -69,6 +76,16 @@
 
     @include for-large-up {
       max-width: 160px;
+    }
+  }
+
+  &__button {
+    color: $color-dark;
+    margin-top: 12px;
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 10px;
     }
   }
 
