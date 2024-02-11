@@ -8,6 +8,11 @@
   font-size: 18px;
   font-weight: 700;
 }
+@media screen and (min-width: 1400px) {
+  .action-button {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 1399px) {
   .hide_mobile {
@@ -1206,6 +1211,10 @@ article:last-child {
   .order__form {
     display: flex;
     margin-top: 26px;
+  }
+  .order__button {
+    width: 100%;
+    margin-top: 12px;
   }
 }
 @media screen and (min-width: 1400px) and (min-width: 1400px) {
