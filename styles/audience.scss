@@ -3,6 +3,7 @@
   background-color: $color-light-blue;
 
   @include for-large-up {
+    margin-top: 110px;
     padding: 0;
   }
 
