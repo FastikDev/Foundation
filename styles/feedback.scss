@@ -1,6 +1,5 @@
 .feedback {
-  padding: 50px $unit;
-  padding-top: 39px;
+  padding: 39px $unit 50px;
   border-bottom: 1px solid $color-light-grey;
 
   @include for-large-up {
@@ -31,7 +30,7 @@
     }
   }
 
-  &__coment {
+  &__comment {
     margin-top: 32px;
     font-size: 16px;
     line-height: 24px;
@@ -40,14 +39,14 @@
       margin-top: 34px;
       text-align: center;
     }
+  }
 
-    &-autor {
-      font-weight: 700;
-    }
+  &__comment-autor {
+    font-weight: 700;
+  }
 
-    &-text {
-      color: $text-color-light-gray;
-    }
+  &__comment-text {
+    color: $text-color-light-gray;
   }
 
   &__image {
@@ -87,9 +86,9 @@
       margin-left: 13px;
     }
 
-    &_selected {
-      background-color: $color-dots-selected;
+    &:first-child {
       margin: 0;
+      background-color: $color-dots-selected;
     }
   }
 }

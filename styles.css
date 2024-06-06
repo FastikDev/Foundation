@@ -27,6 +27,57 @@
   }
 }
 
+.top-section {
+  background-color: rgb(243, 198, 189);
+}
+@media screen and (min-width: 1400px) {
+  .top-section {
+    padding-top: 39px;
+  }
+}
+
+.logo {
+  display: flex;
+}
+.logo__image {
+  width: 48px;
+  height: 48px;
+  margin-right: 13px;
+}
+@media screen and (min-width: 1400px) {
+  .logo__image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+}
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo__name {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.logo__description {
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(43, 41, 45, 0.6);
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .logo__description {
+    display: block;
+  }
+}
+@media screen and (max-width: 399px) {
+  .logo_footer {
+    display: none;
+  }
+}
+
 .header {
   height: 64px;
   width: 100%;
@@ -70,14 +121,6 @@
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
   display: inline-block;
 }
-.header .logo__description {
-  display: none;
-}
-@media screen and (min-width: 1400px) {
-  .header .logo__description {
-    display: block;
-  }
-}
 
 .navigation {
   display: none;
@@ -110,46 +153,6 @@
   width: 8px;
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   margin-left: 11px;
-}
-
-.logo {
-  display: flex;
-}
-.logo__image {
-  width: 48px;
-  height: 48px;
-  margin-right: 13px;
-}
-@media screen and (min-width: 1400px) {
-  .logo__image {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-  }
-}
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.logo__name {
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 700;
-}
-.logo__description {
-  font-size: 18px;
-  line-height: 25px;
-  color: rgba(43, 41, 45, 0.6);
-}
-
-.top-section {
-  background-color: rgb(243, 198, 189);
-}
-@media screen and (min-width: 1400px) {
-  .top-section {
-    padding-top: 39px;
-  }
 }
 
 .headline {
@@ -352,9 +355,8 @@ article:last-child {
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 1400px) {
-  .customers-two {
+  .customers_bottom {
     padding-top: 43px;
     padding-bottom: 76px;
   }
@@ -362,10 +364,6 @@ article:last-child {
 
 .tips {
   margin-top: 8px;
-}
-.tips .tip {
-  padding: 40px 15px 0px 15px;
-  border-bottom: 1px solid rgb(227, 227, 227);
 }
 .tips__subtitle {
   margin: 0;
@@ -411,6 +409,11 @@ article:last-child {
   .tips {
     display: none;
   }
+}
+
+.tip {
+  padding: 40px 15px 0px 15px;
+  border-bottom: 1px solid rgb(227, 227, 227);
 }
 
 .features {
@@ -597,25 +600,26 @@ article:last-child {
   line-height: 28px;
   margin: 0;
 }
-.review__coment {
+.review__comment {
   display: flex;
   margin-top: 26px;
 }
-.review__coment-avatar {
+.review__comment-avatar {
   width: 40px;
   height: 40px;
   margin-right: 11px;
 }
-.review__coment__text {
+.review__comment-text {
   display: flex;
   flex-direction: column;
+  margin-left: 11px;
 }
-.review__text-title {
+.review__comment-text-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 }
-.review__text-description {
+.review__comment-text-description {
   font-size: 16px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
@@ -763,7 +767,7 @@ article:last-child {
 }
 
 .audience {
-  padding: 50px 15px;
+  padding: 40px 15px 50px 15px;
   background-color: rgba(0, 161, 198, 0.07);
 }
 @media screen and (min-width: 1400px) {
@@ -775,16 +779,20 @@ article:last-child {
 @media screen and (min-width: 1400px) {
   .audience__details {
     max-width: 555px;
-    margin: 108px auto 0 auto;
+    margin: 108px auto;
+    margin-bottom: 0;
   }
 }
 .audience__list {
   margin-top: 40px;
   max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 @media screen and (min-width: 1400px) {
   .audience__list {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 111px auto 110px auto;
   }
@@ -864,22 +872,9 @@ article:last-child {
     margin: 111px auto 110px auto;
   }
 }
-.audience__card.user-card {
-  margin-top: 15px;
-}
-.audience__card.user-card:first-child {
-  margin-top: 0;
-}
-@media screen and (min-width: 1400px) {
-  .audience__card.user-card {
-    margin-top: 0;
-    flex: 1;
-  }
-}
 .audience .user-card {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
+  min-width: 290px;
   padding: 22px 0 33px 0;
   display: flex;
   flex-direction: column;
@@ -892,7 +887,7 @@ article:last-child {
 }
 @media screen and (min-width: 1400px) {
   .audience .user-card {
-    max-width: 262px;
+    width: 262px;
   }
 }
 .audience .user-card:hover {
@@ -913,8 +908,7 @@ article:last-child {
 }
 
 .feedback {
-  padding: 50px 15px;
-  padding-top: 39px;
+  padding: 39px 15px 50px;
   border-bottom: 1px solid rgb(227, 227, 227);
 }
 @media screen and (min-width: 1400px) {
@@ -945,21 +939,21 @@ article:last-child {
     max-width: 750px;
   }
 }
-.feedback__coment {
+.feedback__comment {
   margin-top: 32px;
   font-size: 16px;
   line-height: 24px;
 }
 @media screen and (min-width: 1400px) {
-  .feedback__coment {
+  .feedback__comment {
     margin-top: 34px;
     text-align: center;
   }
 }
-.feedback__coment-autor {
+.feedback__comment-autor {
   font-weight: 700;
 }
-.feedback__coment-text {
+.feedback__comment-text {
   color: rgba(43, 41, 45, 0.6);
 }
 .feedback__image {
@@ -987,7 +981,7 @@ article:last-child {
     margin-top: 40px;
   }
 }
-.dots .dot {
+.dots__item {
   width: 12px;
   height: 12px;
   background-color: rgba(43, 41, 45, 0.2);
@@ -995,15 +989,15 @@ article:last-child {
   margin-left: 20px;
 }
 @media screen and (min-width: 1400px) {
-  .dots .dot {
+  .dots__item {
     width: 8px;
     height: 8px;
     margin-left: 13px;
   }
 }
-.dots .dot-selected {
-  background-color: rgb(49, 66, 197);
+.dots__item:first-child {
   margin: 0;
+  background-color: rgb(49, 66, 197);
 }
 
 .hiring {
@@ -1057,11 +1051,11 @@ article:last-child {
     width: 247px;
   }
 }
-.hiring__vacies {
+.hiring__vacancies {
   margin-top: 39px;
 }
 @media screen and (min-width: 1400px) {
-  .hiring__vacies {
+  .hiring__vacancies {
     width: 100%;
     margin-top: 110px;
   }
@@ -1277,8 +1271,7 @@ article:last-child {
     display: none;
   }
 }
-
-.about-company {
+.footer__about-company {
   margin-top: 44px;
 }
 
@@ -1436,11 +1429,6 @@ article:last-child {
   color: rgba(43, 41, 45, 0.6);
 }
 
-@media screen and (max-width: 399px) {
-  .footer .logo {
-    display: none;
-  }
-}
 * {
   box-sizing: border-box;
 }
