@@ -3,8 +3,9 @@
   background-color: $color-light-blue;
 
   @include for-large-up {
-    margin-top: 110px;
     padding: 0;
+    padding-top: 108px;
+    margin-top: 110px;
   }
 
   &__details {
@@ -24,8 +25,10 @@
 
     @include for-large-up {
       flex-direction: row;
-      justify-content: space-between;
-      margin: 111px auto 110px auto;
+      justify-content: center;
+      margin: 111px auto;
+      margin-bottom: 0;
+      gap: 30px;
     }
   }
 
@@ -125,7 +128,7 @@
     cursor: pointer;
 
     @include for-large-up {
-      width: 262px;
+      max-width: 262px;
     }
 
     &:hover {
