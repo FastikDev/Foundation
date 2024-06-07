@@ -26,12 +26,6 @@
       margin: 0;
     }
   }
-
-  .logo {
-    @include for-large-down {
-      display: none;
-    }
-  }
 }
 
 .about-company {
@@ -101,7 +95,7 @@
 
   &__list {
     list-style-type: none;
-   
+
     padding: 0;
     margin: 0;
     margin-top: 18px;
@@ -163,41 +157,5 @@
     &:first-child {
       margin-left: 0;
     }
-  }
-}
-
-.logo-vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include for-large-up {
-    display: none;
-  }
-
-  &__image {
-    width: 60px;
-    height: 60px;
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  &__description {
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: $text-color-light-gray;
-  }
-}
-
-@media screen and (max-width: 399px) {
-  .footer .logo {
-    display: none;
   }
 }
