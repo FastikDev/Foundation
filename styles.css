@@ -27,6 +27,15 @@
   }
 }
 
+.top-section {
+  background-color: rgb(243, 198, 189);
+}
+@media screen and (min-width: 1400px) {
+  .top-section {
+    padding-top: 39px;
+  }
+}
+
 .logo {
   display: flex;
 }
@@ -385,9 +394,8 @@ article:last-child {
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 1400px) {
-  .customers-two {
+  .customers_bottom {
     padding-top: 43px;
     padding-bottom: 76px;
   }
@@ -395,10 +403,6 @@ article:last-child {
 
 .tips {
   margin-top: 8px;
-}
-.tips .tip {
-  padding: 40px 15px 0px 15px;
-  border-bottom: 1px solid rgb(227, 227, 227);
 }
 .tips__subtitle {
   margin: 0;
@@ -444,6 +448,11 @@ article:last-child {
   .tips {
     display: none;
   }
+}
+
+.tip {
+  padding: 40px 15px 0px 15px;
+  border-bottom: 1px solid rgb(227, 227, 227);
 }
 
 .features {
@@ -630,25 +639,26 @@ article:last-child {
   line-height: 28px;
   margin: 0;
 }
-.review__coment {
+.review__comment {
   display: flex;
   margin-top: 26px;
 }
-.review__coment-avatar {
+.review__comment-avatar {
   width: 40px;
   height: 40px;
   margin-right: 11px;
 }
-.review__coment__text {
+.review__comment-text {
   display: flex;
   flex-direction: column;
+  margin-left: 11px;
 }
-.review__text-title {
+.review__comment-text-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 }
-.review__text-description {
+.review__comment-text-description {
   font-size: 16px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
@@ -801,25 +811,31 @@ article:last-child {
 }
 @media screen and (min-width: 1400px) {
   .audience {
-    margin-top: 110px;
     padding: 0;
+    padding-top: 108px;
+    margin-top: 110px;
   }
 }
 @media screen and (min-width: 1400px) {
   .audience__details {
     max-width: 555px;
-    margin: 108px auto 0 auto;
+    margin: 0 auto;
   }
 }
 .audience__list {
   margin-top: 40px;
   max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 @media screen and (min-width: 1400px) {
   .audience__list {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 111px auto 110px auto;
+    margin: 111px auto;
+    margin-bottom: 0;
+    gap: 30px;
   }
 }
 .audience__title {
@@ -893,26 +909,13 @@ article:last-child {
 @media screen and (min-width: 1400px) {
   .audience__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 111px auto 110px auto;
   }
 }
-.audience__card.user-card {
-  margin-top: 15px;
-}
-.audience__card.user-card:first-child {
-  margin-top: 0;
-}
-@media screen and (min-width: 1400px) {
-  .audience__card.user-card {
-    margin-top: 0;
-    flex: 1;
-  }
-}
 .audience .user-card {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
+  min-width: 290px;
   padding: 22px 0 33px 0;
   display: flex;
   flex-direction: column;
@@ -946,8 +949,7 @@ article:last-child {
 }
 
 .feedback {
-  padding: 50px 15px;
-  padding-top: 39px;
+  padding: 39px 15px 50px;
   border-bottom: 1px solid rgb(227, 227, 227);
 }
 @media screen and (min-width: 1400px) {
@@ -978,21 +980,21 @@ article:last-child {
     max-width: 750px;
   }
 }
-.feedback__coment {
+.feedback__comment {
   margin-top: 32px;
   font-size: 16px;
   line-height: 24px;
 }
 @media screen and (min-width: 1400px) {
-  .feedback__coment {
+  .feedback__comment {
     margin-top: 34px;
     text-align: center;
   }
 }
-.feedback__coment-autor {
+.feedback__comment-autor {
   font-weight: 700;
 }
-.feedback__coment-text {
+.feedback__comment-text {
   color: rgba(43, 41, 45, 0.6);
 }
 .feedback__image {
@@ -1020,7 +1022,7 @@ article:last-child {
     margin-top: 40px;
   }
 }
-.dots .dot {
+.dots__item {
   width: 12px;
   height: 12px;
   background-color: rgba(43, 41, 45, 0.2);
@@ -1028,15 +1030,15 @@ article:last-child {
   margin-left: 20px;
 }
 @media screen and (min-width: 1400px) {
-  .dots .dot {
+  .dots__item {
     width: 8px;
     height: 8px;
     margin-left: 13px;
   }
 }
-.dots .dot-selected {
-  background-color: rgb(49, 66, 197);
+.dots__item:first-child {
   margin: 0;
+  background-color: rgb(49, 66, 197);
 }
 
 .hiring {
@@ -1090,11 +1092,11 @@ article:last-child {
     width: 247px;
   }
 }
-.hiring__vacies {
+.hiring__vacancies {
   margin-top: 39px;
 }
 @media screen and (min-width: 1400px) {
-  .hiring__vacies {
+  .hiring__vacancies {
     width: 100%;
     margin-top: 110px;
   }

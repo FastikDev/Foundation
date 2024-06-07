@@ -103,29 +103,30 @@
     margin: 0;
   }
 
-  &__coment {
+  &__comment {
     display: flex;
     margin-top: 26px;
-
-    &-avatar {
-      width: 40px;
-      height: 40px;
-      margin-right: 11px;
-    }
-
-    &__text {
-      display: flex;
-      flex-direction: column;
-    }
   }
 
-  &__text-title {
+  &__comment-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+  }
+
+  &__comment-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+  }
+
+  &__comment-text-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
   }
 
-  &__text-description {
+  &__comment-text-description {
     font-size: 16px;
     line-height: 22px;
     color: $text-color-light-gray;

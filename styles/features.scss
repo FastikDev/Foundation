@@ -69,13 +69,13 @@
     margin-top: 21px;
     padding-bottom: 22px;
     display: flex;
+  }
 
-    &-text {
-      font-weight: 700;
-      font-size: $popular-font-size;
-      line-height: 26px;
-      margin-left: $unit;
-    }
+  &__advantage-item-text {
+    font-weight: 700;
+    font-size: $popular-font-size;
+    line-height: 26px;
+    margin-left: $unit;
   }
 
   &__left-decoration {
