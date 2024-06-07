@@ -793,7 +793,7 @@ article:last-child {
 @media screen and (min-width: 1400px) {
   .audience__list {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin: 111px auto;
     margin-bottom: 0;
     gap: 30px;

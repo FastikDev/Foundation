@@ -24,7 +24,7 @@
 
     @include for-large-up {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       margin: 111px auto;
       margin-bottom: 0;
       gap: 30px;
