@@ -919,7 +919,7 @@ article:last-child {
 }
 @media screen and (min-width: 1400px) {
   .audience .user-card {
-    max-width: 262px;
+    min-width: 262px;
   }
 }
 .audience .user-card:hover {

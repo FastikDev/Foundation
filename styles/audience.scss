@@ -127,7 +127,7 @@
     cursor: pointer;
 
     @include for-large-up {
-      max-width: 262px;
+      min-width: 262px;
     }
 
     &:hover {
