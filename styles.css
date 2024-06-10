@@ -185,15 +185,6 @@
   margin-left: 11px;
 }
 
-.top-section {
-  background-color: rgb(243, 198, 189);
-}
-@media screen and (min-width: 1400px) {
-  .top-section {
-    padding-top: 39px;
-  }
-}
-
 .headline {
   width: 100%;
   padding-bottom: 36px;
@@ -1201,9 +1192,9 @@ article:last-child {
   max-width: 555px;
 }
 .order__ilustration {
-  max-width: 200px;
-  margin: 0 auto;
+  max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1400px) {
   .order__ilustration {
@@ -1307,11 +1298,6 @@ article:last-child {
     margin: 0;
   }
 }
-
-.about-company {
-  margin-top: 44px;
-}
-
 .footer__navigation {
   margin: 0;
   display: flex;
@@ -1324,6 +1310,9 @@ article:last-child {
     height: 338px;
     flex-direction: row;
   }
+}
+.footer__about-company {
+  margin-top: 44px;
 }
 
 .downloads {

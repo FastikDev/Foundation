@@ -85,11 +85,3 @@
     margin-left: 11px;
   }
 }
-
-.top-section {
-  background-color: $color-light-coral;
-
-  @include for-large-up {
-    padding-top: 39px;
-  }
-}

@@ -14,9 +14,9 @@
   }
 
   &__ilustration {
-    max-width: 200px;
-    margin: 0 auto;
+    max-width: 100%;
     display: block;
+    margin: 0 auto;
 
     @include for-large-up {
       max-width: 269px;
